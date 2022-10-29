@@ -1,8 +1,15 @@
 import React from 'react';
-import Home from './screens/Home/index.js';
+import { NavigationContainer } from '@react-navigation/native';
+
+import BottomTab from './components/BottomTab';
 import { LogBox } from 'react-native';
 
 export default function App() {
-  return <Home />;
+  return (
+    <NavigationContainer>
+      <BottomTab />
+    </NavigationContainer>
+  );
 }
+
 LogBox.ignoreAllLogs();

@@ -2,54 +2,37 @@ const categoriesData = [
   {
     id: 1,
     productName: 'Fastening & Joining',
+    productImage: require('../images/tool.png'),
   },
   {
     id: 2,
     productName: 'Sealing',
+    productImage: require('../images/tool.png'),
   },
   {
     id: 3,
     productName: 'Raw Materials',
+    productImage: require('../images/tool.png'),
   },
   {
     id: 4,
     productName: 'Fastening & Joining',
+    productImage: require('../images/tool.png'),
   },
   {
     id: 5,
     productName: 'Fastening & Joining',
+    productImage: require('../images/tool.png'),
   },
   {
     id: 6,
     productName: 'Fastening & Joining',
+    productImage: require('../images/tool.png'),
   },
   {
     id: 7,
     productName: 'Fastening & Joining',
-  },
-  {
-    id: 8,
-    productName: 'Fastening & Joining',
-  },
-  {
-    id: 9,
-    productName: 'Fastening & Joining',
-  },
-  {
-    id: 10,
-    productName: 'Fastening & Joining',
-  },
-  {
-    id: 11,
-    productName: 'Fastening & Joining',
-  },
-  {
-    id: 12,
-    productName: 'Fastening & Joining',
-  },
-  {
-    id: 13,
-    productName: 'Fastening & Joining',
+    productImage: require('../images/tool.png'),
   },
 ];
 
