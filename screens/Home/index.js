@@ -20,12 +20,10 @@ const index = () => {
               data={categoriesData}
               renderItem={({ item }) => {
                 return (
-                  <ScrollView>
-                    <ProductComponent
-                      productImage={item.productImage}
-                      productName={item.productName}
-                    />
-                  </ScrollView>
+                  <ProductComponent
+                    productImage={item.productImage}
+                    productName={item.productName}
+                  />
                 );
               }}
               keyExtractor={(item) => item.id}

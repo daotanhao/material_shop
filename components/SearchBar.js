@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, TextInput, View } from 'react-native';
 import React from 'react';
 
-const SearchBar = () => {
-  return <View style={styles.container}></View>;
+const SearchBar = ({}) => {
+  return <TextInput style={styles.container}></TextInput>;
 };
 
 export default SearchBar;

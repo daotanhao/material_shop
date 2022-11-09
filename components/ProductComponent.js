@@ -19,7 +19,6 @@ export default ProductComponent;
 const styles = StyleSheet.create({
   container: {
     paddingTop: 30,
-    justifyContent: 'space-between',
     alignItems: 'center',
     width: 120,
   },

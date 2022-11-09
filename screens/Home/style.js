@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, StatusBar, Platform } from 'react-native';
 import Colors from '../../assets/Colors';
 
 const layoutStyles = StyleSheet.create({
@@ -6,6 +6,10 @@ const layoutStyles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     flexDirection: 'column',
+    paddingTop:
+      Platform.OS === 'android'
+        ? StatusBar.currentHeight
+        : StatusBar.currentHeight + 20,
   },
   header: {
     flex: 1,
@@ -13,7 +17,6 @@ const layoutStyles = StyleSheet.create({
     alignItems: 'center',
     borderBottomWidth: 3,
     borderBottomColor: Colors.yellow,
-    marginTop: 10,
   },
   display: {
     flex: 9,

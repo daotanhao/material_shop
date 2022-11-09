@@ -26,30 +26,48 @@ const layoutStyles = StyleSheet.create({
     flex: 9,
     backgroundColor: 'white',
   },
-  contactSection: {
+  action: {
     backgroundColor: Colors.backgroundGray,
     flexDirection: 'row',
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
+    paddingVertical: 5,
+    justifyContent: 'space-between',
     paddingHorizontal: 20,
   },
-  searchResultSection: {
-    flex: 11,
+
+  orderDetails: {
+    flex: 7.5,
+    backgroundColor: 'white',
+  },
+  confirmOrder: {
+    flex: 1.5,
+    backgroundColor: Colors.backgroundGray,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    paddingVertical: 10,
+  },
+  priceSection: {
+    flex: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  orderButtonSection: {
+    flex: 6,
+    justifyContent: 'center',
     alignItems: 'center',
   },
 });
 
 const componentStyles = StyleSheet.create({
-  cancelText: {
-    color: Colors.textGray,
-    fontSize: 18,
-    fontWeight: '500',
+  headerText: {
+    color: Colors.green,
+    fontSize: 26,
+    fontWeight: 'bold',
   },
-  contactText: {
+  actionText: {
     color: Colors.textGray,
     fontSize: 19,
-    fontWeight: '500',
+    fontWeight: '400',
     marginLeft: 5,
   },
   searchInput: {
@@ -63,6 +81,28 @@ const componentStyles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#E1E1E1',
+  },
+  actionButton: {
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  orderButton: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    backgroundColor: Colors.green,
+    paddingHorizontal: 20,
+    paddingVertical: 13,
+    borderRadius: 7,
+  },
+  price: {
+    alignSelf: 'center',
+    fontSize: 20,
+  },
+  orderText: {
+    color: 'white',
+    fontSize: 19,
+    fontWeight: '400',
+    marginLeft: 10,
   },
 });
 

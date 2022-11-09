@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/Home/index';
 import SearchScreen from '../screens/Search/index';
 import SettingScreen from '../screens/Setting/index';
+import OrderScreen from '../screens/Order/index';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
@@ -12,7 +13,7 @@ const BottomTab = () => {
   return (
     <Tab.Navigator screenOptions={{ showLabel: false }}>
       <Tab.Screen
-        name="HomeScreen"
+        name="Home"
         component={HomeScreen}
         options={{
           tabBarIcon: ({ focused }) => (
@@ -21,7 +22,7 @@ const BottomTab = () => {
         }}
       />
       <Tab.Screen
-        name="SearchScreen"
+        name="Search"
         component={SearchScreen}
         options={{
           tabBarIcon: ({ focused }) => (
@@ -30,7 +31,16 @@ const BottomTab = () => {
         }}
       />
       <Tab.Screen
-        name="Setting"
+        name="Order"
+        component={OrderScreen}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <Icon name="cart" size={20} color={focused ? 'blue' : 'gray'} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Settings"
         component={SettingScreen}
         options={{
           tabBarIcon: ({ focused }) => (
