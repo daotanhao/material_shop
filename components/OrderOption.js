@@ -1,10 +1,11 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import Colors from '../assets/Colors';
+import BottomPopup from './BottomPopup';
 
-const OrderOption = () => {
+const OrderOption = ({ handleOrderOption }) => {
   return (
-    <Pressable style={styles.container}>
+    <Pressable style={styles.container} onPress={handleOrderOption}>
       <Text style={styles.title}>Delivery Address</Text>
       <Text style={styles.detail}>Please select...</Text>
     </Pressable>

@@ -6,8 +6,8 @@ const categoriesData = [
   },
   {
     id: 2,
-    productName: 'Sealing',
-    productImage: require('../images/tool.png'),
+    productName: 'Wrench',
+    productImage: require('../images/wrench.jpg'),
   },
   {
     id: 3,

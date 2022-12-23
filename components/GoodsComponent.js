@@ -1,20 +1,33 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import CartSlice from '../screens/Order/CartSlice';
 
-const ProductComponent = ({ productImage, productName }) => {
+const GoodsComponent = ({ productImage, productName }) => {
+  const dispatch = useDispatch();
+  const cartList = useSelector((state) => state.cart);
+  const handleBuying = () => {
+    dispatch(
+      CartSlice.actions.addProduct({
+        id: cartList.length + 1,
+        productName: productName,
+        productImage: productImage,
+      })
+    );
+  };
   return (
-    <View style={styles.container}>
+    <Pressable style={styles.container} onPress={handleBuying}>
       <View style={styles.productImage}>
         <Image source={productImage} style={styles.productImageStyle} />
       </View>
       <View style={styles.productNameStyle}>
         <Text style={styles.productName}>{productName}</Text>
       </View>
-    </View>
+    </Pressable>
   );
 };
 
-export default ProductComponent;
+export default GoodsComponent;
 
 const styles = StyleSheet.create({
   container: {

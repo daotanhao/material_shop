@@ -17,7 +17,7 @@ const index = () => {
 
       <View style={layoutStyles.display}>
         <ScrollView>
-          <SettingOption title={'List'} />
+          <SettingOption title={'List'} screen={'ThemeScreen'} />
           <SettingOption title={'Order History'} />
           <SettingOption title={'Saved Orders'} />
           <SettingOption title={'Settings'} />

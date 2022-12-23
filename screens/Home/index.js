@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, ScrollView, FlatList, SafeAreaView } from 'react-native';
 import { layoutStyles, componentStyles } from './style';
 import SearchButton from '../../components/SearchButton';
-import ProductComponent from '../../components/ProductComponent';
+import GoodsComponent from '../../components/GoodsComponent';
 import categoriesData from '../../assets/data/CategoriesData';
 
 const index = () => {
@@ -20,7 +20,7 @@ const index = () => {
               data={categoriesData}
               renderItem={({ item }) => {
                 return (
-                  <ProductComponent
+                  <GoodsComponent
                     productImage={item.productImage}
                     productName={item.productName}
                   />

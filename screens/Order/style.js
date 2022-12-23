@@ -56,6 +56,60 @@ const layoutStyles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  listOrder: {
+    flex: 3,
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  listOrderBlank: {
+    height: 150,
+    marginTop: 20,
+    marginLeft: 20,
+  },
+  listOrderMethods: {
+    flex: 7,
+  },
+  modal: {
+    backgroundColor: 'white',
+    height: '50%',
+    width: '100%',
+    borderTopColor: Colors.yellow,
+    borderTopWidth: 5,
+  },
+  title: {
+    flexDirection: 'row',
+    height: '15%',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    paddingVertical: 5,
+    borderBottomWidth: 1,
+    borderColor: Colors.backgroundGray,
+  },
+  content: {
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    paddingVertical: 5,
+    borderBottomWidth: 1,
+    borderColor: Colors.backgroundGray,
+    flexDirection: 'row',
+    height: '25%',
+  },
+  addItem: {
+    flexDirection: 'row',
+    height: '20%',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    paddingVertical: 5,
+    borderBottomWidth: 1,
+    borderColor: Colors.backgroundGray,
+  },
+  modalButtonSection: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 20,
+  },
 });
 
 const componentStyles = StyleSheet.create({
@@ -67,7 +121,7 @@ const componentStyles = StyleSheet.create({
   actionText: {
     color: Colors.textGray,
     fontSize: 19,
-    fontWeight: '400',
+    fontWeight: '500',
     marginLeft: 5,
   },
   searchInput: {
@@ -94,15 +148,39 @@ const componentStyles = StyleSheet.create({
     paddingVertical: 13,
     borderRadius: 7,
   },
-  price: {
+  priceText: {
     alignSelf: 'center',
     fontSize: 20,
   },
   orderText: {
     color: 'white',
     fontSize: 19,
-    fontWeight: '400',
+    fontWeight: '500',
     marginLeft: 10,
+  },
+  notificationText: {
+    color: Colors.green,
+    fontSize: 18,
+    fontWeight: '700',
+  },
+  saveButton: {
+    alignItems: 'center',
+    backgroundColor: Colors.green,
+    paddingVertical: 8,
+    borderRadius: 5,
+    width: '60%',
+  },
+  cancelButton: {
+    alignItems: 'center',
+    backgroundColor: 'white',
+    paddingVertical: 10,
+    borderRadius: 7,
+    width: '30%',
+  },
+  modalTitleText: {
+    fontSize: 20,
+    color: Colors.green,
+    fontWeight: 'bold',
   },
 });
 

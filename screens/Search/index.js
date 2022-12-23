@@ -10,7 +10,7 @@ import React from 'react';
 import { layoutStyles, componentStyles } from './style';
 import Icon from 'react-native-vector-icons/Feather';
 import categoriesData from '../../assets/data/CategoriesData';
-import ProductComponent from '../../components/ProductComponent';
+import GoodsComponent from '../../components/GoodsComponent';
 
 const index = () => {
   const [searchText, setSearchText] = React.useState();
@@ -44,7 +44,7 @@ const index = () => {
               data={filter}
               renderItem={({ item }) => {
                 return (
-                  <ProductComponent
+                  <GoodsComponent
                     productImage={item.productImage}
                     productName={item.productName}
                   />
